@@ -1,0 +1,47 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  padding-top: 35px;
+}
+
+#logo {
+  width: 260px;
+  height: 206px;
+}
+
+.button {
+  width: 230px;
+  height: 50px;
+  background-color: var(--primary);
+  color: var(--secundary);
+  font-family: var(--font-family);
+  font-size: 0.75em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
+  font-weight: bolder;
+}
+
+.characters {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.tents {
+  display: flex;
+}
+.lateral-tent {
+  height: 63px;
+  width: 57px;
+  margin-top: 22px;
+}
+
+.central-tent {
+  width: 114px;
+  height: 76px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
