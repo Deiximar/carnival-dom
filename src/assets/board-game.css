@@ -1,0 +1,76 @@
+main {
+  justify-content: stretch;
+  padding: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#score,
+#timer {
+  background-color: var(--primary);
+  color: var(--secundary);
+  font-family: var(--font-family);
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
+  font-weight: bold;
+  height: fit-content;
+  width: 80px;
+  text-align: center;
+}
+
+#score {
+  width: 80px;
+}
+
+#timer {
+  width: 120px;
+}
+
+.play-stop-button {
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+.stop-button,
+.play-button {
+  margin: 0 auto;
+  width: 45px;
+}
+
+.lives {
+  display: flex;
+  margin: 10px;
+}
+
+.board-game {
+  flex-grow: 1;
+}
+
+.level {
+  font-size: 1em;
+  color: var(--secundary);
+  text-align: center;
+}
+
+.target-text {
+  font-size: 0.6em;
+  text-align-last: center;
+  font-weight: bold;
+}
+
+.target-score,
+.target-time {
+  color: var(--primary);
+  -webkit-text-stroke: 0.5px black;
+}
+
+.carpas img {
+  width: 385px;
+  height: 155px;
+}
