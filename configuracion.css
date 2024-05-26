@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(./imagen/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+#return {
+    margin-left: -40px;
+    border: none;
+    background: transparent;   
+    position: absolute;
+    top: 10px;
+}
+
+h1 {
+    color: #740059; 
+    text-align: center;
+    margin-top: 130px;
+    font-size: 32px;
+}
+
+main {
+    font-size: 18px;
+    color: #740059; 
+    text-align: center;
+}
+
+main button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 15px 60px;
+}
+
+.music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.sound {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 65px;
+}
+
+#userInput {
+    width: 200px;
+    border: 2px solid #FFB52B;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 65px;
+    color: #740059;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #740059;
+    font-size: 18px;
+}
+
+#music, #sound, #spanish, #no-music, #mute, #english, #check {
+    border: none;
+    background: transparent;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
+    background-color: #FFB52B;
+    color: #740059;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.circus {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.clown {
+    display: flex;
+    margin-left: 340px;
+}
+
+
+
+
+
+
+
+

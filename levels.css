@@ -3,31 +3,33 @@
     padding: 0;
     font-family: 'Kanit', sans-serif;
     font-size: 32px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 body {
-    background-image: url('./imagen/background.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 100vh;
+    background-image: url(./imagen/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 #return, #settings {
     border: none;
     background: transparent;   
     position: absolute;
-    top: 25px;
+    box-shadow: none;
+    top: 10px;
     width: 65px;
 }
 
 #return {
     left: 15px;
+    margin-left: -30px;
 }
 
 #settings {
-    right: 15px;
+    right: -25px;
 }
 
 h1 {
@@ -43,22 +45,30 @@ main {
     margin-top: 50px;
 }
 
-main .container {
-    margin: 10px;
-    padding: 15px 60px;
+main button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
     background-color: #FFB52B;
     color: #740059;
-    border-radius: 20px;
+    margin-left: 65px;
+    margin-top: 30px;
+    margin: 10px;
+    padding: 10px 60px;
 }
 
 .circus {
     display: flex;
-    margin-top: 330px;
-    margin-left: 10px;
+    width: 100%;
+    margin-top: 210px;
+    margin-left: -50px;
 }
 
 .clown {
     display: flex;
-    margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 290px;
 }
