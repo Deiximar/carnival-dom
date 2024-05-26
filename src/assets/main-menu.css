@@ -24,7 +24,6 @@ main {
 }
 
 .button:hover {
-  background-color: var(--primary);
   cursor: pointer;
   box-shadow: 4px 4px 10px black;
 }
