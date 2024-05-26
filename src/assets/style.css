@@ -24,4 +24,6 @@ main {
   height: 750px;
   width: 400px;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
