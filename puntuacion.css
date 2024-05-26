@@ -58,13 +58,25 @@ h6 {
 }
 
 
-.container {
-    margin: 10px;
-    padding: 160px 130px;
-    background-color: #FFB52B;
-    color: #740059;
-    border-radius: 20px;
+
+table {
+        width: 60%;
+        height: 80%;
+        margin: 10px;
+        background-color: whitesmoke;
+        color: #740059;
+        border-radius: 20px;
+        text-align: center;
+        text-size-adjust: 30%;
+       
 }
+th, td {
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        text-size-adjust: 30%;
+}
+
 .circus {
     display: flex;
     margin-top: 50px;

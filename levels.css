@@ -33,7 +33,7 @@ body {
 h1 {
     color: #740059; 
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 main {
@@ -43,7 +43,7 @@ main {
     margin-top: 50px;
 }
 
-main button {
+main .container {
     margin: 10px;
     padding: 15px 60px;
     background-color: #FFB52B;
