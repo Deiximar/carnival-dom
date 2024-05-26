@@ -64,7 +64,9 @@ h6 {
     background-color: #FFB52B;
     color: #740059;
     border-radius: 20px;
+    border-color: #FFB52B;
 }
+
 .circus {
     display: flex;
     margin-top: 50px;

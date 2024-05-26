@@ -28,6 +28,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -37,16 +38,20 @@ main {
     position: absolute;
     top: 25px;
     width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 #return {
-    left: 260px;
+    left: 490px;
     margin-top: 45px;
 }
 
 #settings {
-    right: 260px;
+    right: 490px;
     margin-top: 45px;
     
 }
@@ -58,33 +63,33 @@ h6 {
 }
 
 
-
 table {
         width: 60%;
-        height: 80%;
+        height: 60%;
         margin: 10px;
         background-color: whitesmoke;
         color: #740059;
         border-radius: 20px;
-        text-align: center;
-        text-size-adjust: 30%;
-       
+        text-align:right;
+        font-size: 16px;
+        
 }
 th, td {
-        width: 50%;
+        column-width: auto;
         height: 10%;
-        text-align: center;
-        text-size-adjust: 30%;
+        text-align: left;
+font-size: 16px;
+text-size-adjust:auto;
 }
 
 .circus {
     display: flex;
-    margin-top: 50px;
+    margin-top: auto;
     margin-right: 200px;
 }
 
 .clown {
     display: flex;
-    margin-top: -20px;
+    margin-bottom: 20px;
     margin-left: 250px;
 }
