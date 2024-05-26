@@ -14,6 +14,27 @@ body {
     height: 100vh;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main button {
+    margin: 10px;
+    padding: 15px 60px;
+    background-color: #FFB52B;
+    color: #740059;
+    border-radius: 20px;
+}
+h1 {
+    color: #740059; 
+    text-align: center;
+    margin-top: 150px;
+}
+
+
 #return, #settings {
     border: none;
     background: transparent;   
@@ -29,36 +50,15 @@ body {
 #settings {
     right: 15px;
 }
-
-h1 {
-    color: #740059; 
-    text-align: center;
-    margin-top: 150px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-main button {
-    margin: 10px;
-    padding: 15px 60px;
-    background-color: #FFB52B;
-    color: #740059;
-    border-radius: 20px;
-}
-
 .circus {
     display: flex;
     margin-top: 330px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
-.clown {
+.happy-clown {
     display: flex;
     margin-top: 30px;
-    margin-left: 300px;
+    margin-right: 150px;
+   
 }
