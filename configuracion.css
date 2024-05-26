@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
+body {
+    background-image: url(./imagen/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
 
 #return {
     margin-left: -40px;
@@ -59,7 +66,6 @@ main button {
 
 #userInput {
     width: 200px;
-    padding: 5px;
     border: 2px solid #FFB52B;
     border-radius: 10px;
     text-align: center;
@@ -82,7 +88,7 @@ main button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 355px;
     height: 50px;
     border: none;
     border-radius: 10px;
@@ -90,14 +96,14 @@ main button {
     background-color: #FFB52B;
     color: #740059;
     font-size: 18px;
-    margin-left: 65px;
+    margin-left: 60px;
     margin-top: 30px;
 }
 
 .circus {
     display: flex;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .clown {

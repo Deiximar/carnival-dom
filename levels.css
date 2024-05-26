@@ -3,7 +3,15 @@
     padding: 0;
     font-family: 'Kanit', sans-serif;
     font-size: 32px;
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(./imagen/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 #return, #settings {
@@ -47,17 +55,16 @@ main button {
     box-shadow: 4px 4px 5px black;
     background-color: #FFB52B;
     color: #740059;
-    font-size: 18px;
     margin-left: 65px;
     margin-top: 30px;
     margin: 10px;
-    padding: 15px 60px;
+    padding: 10px 60px;
 }
 
 .circus {
     display: flex;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 210px;
     margin-left: -50px;
 }
 
