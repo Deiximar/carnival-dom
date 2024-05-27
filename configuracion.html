@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuración</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel='stylesheet'>
+    <link rel="stylesheet" href="/src/assets/style.css">
     <link rel="stylesheet" href="./configuracion.css">
 </head>
+
 <body>
     <main>
-        <div>
-            <button id="return">
+
+        <button id="return" onclick="location.href='index.html'">
             <img src="./imagen/return.svg" alt="return button">
-            </button>
-        </div>
+        </button>
+
 
         <h1>Configuración</h1>
 
         <div class="music">
             <p>Música</p>
-            <button id="music" onclick="changeButton()">
+            <button class="icon" id="music" onclick="changeButton()">
                 <img src="./imagen/music.svg" alt="music button">
             </button>
-            <button id="no-music" style="display: none;" onclick="changeButton()">
+            <button class="icon" id="no-music" style="display: none;" onclick="changeButton()">
                 <img src="./imagen/no-music.svg" alt="no music button">
             </button>
         </div>
 
         <div class="sound">
             <p>Efectos de sonido</p>
-            <button id="sound" onclick="changeButton2()">
+            <button class="icon" id="sound" onclick="changeButton2()">
                 <img src="./imagen/speaker.svg" alt="sound button">
             </button>
-            <button id="mute" style="display: none;" onclick="changeButton2()">
+            <button class="icon" id="mute" style="display: none;" onclick="changeButton2()">
                 <img src="./imagen/mute.svg" alt="mute button">
             </button>
         </div>
-       
+
         <div class="language">
             <p>Idiomas</p>
-            <button id="spanish" onclick="changeButton3()">
+            <button class="icon" id="spanish" onclick="changeButton3()">
                 <img src="./imagen/spanish.svg" alt="spanish button">
             </button>
-            <button id="english" style="display: none;" onclick="changeButton3()">
+            <button class="icon" id="english" style="display: none;" onclick="changeButton3()">
                 <img src="./imagen/english.svg" alt="english button">
             </button>
         </div>
@@ -50,21 +55,21 @@
         <button id="changeuser" class="button">Cambiar nombre de usuario</button>
         <div id="userForm" class="name-form" style="display: none;">
             <input type="text" id="userInput" placeholder="Nombre de usuario">
-            <button id="check" class="checkbutton"> 
+            <button class="icon" id="check" class="checkbutton">
                 <img src="./imagen/check.svg" alt="check button">
             </button>
         </div>
-    
-        <button class="button">Ver puntuaciones</button>
+
+        <button class="button" onclick="location.href='puntuacion.html'">Ver puntuaciones</button>
         <button class="button">Restablecer el juego</button>
 
-        <div class="circus">
-        <img src="./imagen/circus.svg" alt="circus">
+        <div class="characters">
+            <img class="circus" src="./imagen/circus.svg" alt="circus">
+            <img class="clown" src="./imagen/clown.svg" alt="clown">
         </div>
-        <div class="clown">
-        <img src="./imagen/clown.svg" alt="clown">
-        </div>
+
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>

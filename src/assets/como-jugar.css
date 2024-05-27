@@ -1,35 +1,3 @@
-/* :root {
-    --main-background: url(../../imagen/background.jpg);
-    --primary: #ffb52b;
-    --secundary: #740059;
-    --font-family: "kanit", sans-serif;
-}
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
-/* body {
-  font-family: var(--font-family);
-  width: fit-content;
-  margin: 30px auto;
-  font-size: 2.1em;
-} */
-/* 
-main {
-  background-image: var(--main-background);
-  background-size: cover;
-  height: 750px;
-  width: 400px;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-} */
-
 main {
   padding: 10px;
 }
@@ -41,28 +9,20 @@ main {
 }
 .nav-buttons img {
   width: 45px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+}
+
+.nav-buttons img:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
 }
 
 #return,
 #settings {
-  /* border: none;
-  background: transparent;
-  position: absolute;
-  top: 25px;
-  width: 65px; */
   background: none;
   border: none;
   width: 45px;
-}
-
-#return {
-  /* left: 260px;
-  margin-top: 45px; */
-}
-
-#settings {
-  /* right: 260px;
-  margin-top: 45px; */
 }
 
 h1 {
@@ -74,12 +34,23 @@ h1 {
 
 .container {
   margin: 10px;
-  padding: 160px 130px;
+  padding: 25px;
   background-color: #ffb52b;
   color: #740059;
   border-radius: 20px;
   border-color: #ffb52b;
   flex-grow: 1;
+  font-size: 0.4em;
+}
+
+ul {
+  list-style-type: disclosure-closed;
+}
+
+.container p:last-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 .circus {
