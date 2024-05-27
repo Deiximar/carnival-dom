@@ -1,0 +1,66 @@
+main {
+  padding: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-buttons img {
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+}
+
+.nav-buttons img:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
+}
+
+#return,
+#settings {
+  background: none;
+  border: none;
+  width: 45px;
+}
+
+h1 {
+  color: #740059;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  margin: 10px;
+  padding: 25px;
+  background-color: #ffb52b;
+  color: #740059;
+  border-radius: 20px;
+  border-color: #ffb52b;
+  flex-grow: 1;
+  font-size: 0.4em;
+}
+
+ul {
+  list-style-type: disclosure-closed;
+}
+
+.container p:last-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.circus {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 200px;
+}
+
+.clown {
+  display: flex;
+  margin-top: -20px;
+  margin-left: 250px;
+}
