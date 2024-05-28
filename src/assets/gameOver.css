@@ -6,29 +6,41 @@ main {
 }  
  .setting-button{
   border:none;
-  justify-items: flex-end;
+  text-align: right;
   background: none;
   top: 25px;
-  width: 20px;
+  width: 100%;
   right: 20px;
   box-shadow: none;
   border-radius: 50%;
-  margin-left: 300px;
 } 
+.setting-button img{
+  box-shadow: 3px 3px 5px black;
+  border-radius:50%;
+}
+.setting-button img:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
+ }
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 10px;
   margin-left:30px;
   padding: 10px 15px;
   background-color: #FFB52B;
   color: #740059;
   border: 1px outset #FFB52B ;
   border-radius: 20px;
-  width: 76.9%;
-  height: 11.4%;
+  width: 200px;
+  height: 40px;
   font-weight: bold;
   box-shadow: 2px 2px 3px rgb(102, 102, 102);
+}
+.button:hover{
+  cursor:pointer;
+  box-shadow: 3px 3px 4px rgb(102, 102, 102);
 }
 .container-over{
   display:flex;
@@ -62,20 +74,19 @@ hr{
 }
 #score{
   background-color: white;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  height: 20px;
+  width: 20px;;
   font-size: 16px;
   margin-left: 20px;
 }
 
 .circus {
   display: flex;
-  margin-top: 30px;
-  margin-right: 50%;
+  margin-top: 20px;
+  margin-right: 55%;
 }
 .sad-clown {
   display: flex;
-  margin-top: 0px;
-  margin-left: 250px;
-  margin-bottom: 40px;
+  margin-left: 45%;
+  margin-bottom: 20px;
 }

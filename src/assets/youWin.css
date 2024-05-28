@@ -6,29 +6,41 @@ main {
 } 
 .setting-button{
   border:none;
-  justify-items: flex-end;
+  text-align: right;
   background: none;
-  top: 25px;
-  width: 20px;
+  top: 10px;
+  width: 100%;
   right: 20px;
   box-shadow: none;
   border-radius: 50%;
- margin-left: 300px;
-}  
+}
+.setting-button img{
+  box-shadow: 3px 3px 5px black;
+  border-radius:50%;
+}
+.setting-button img:hover{
+ cursor: pointer;
+ box-shadow: 3px 3px 10px black;
+}
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 10px;
   margin-left:30px;
-  padding: 10px 15px;
+  padding: 0px 15px;
   background-color: #FFB52B;
   color: #740059;
   border: 1px outset #FFB52B ;
   border-radius: 20px;
-  width: 76.9%;
-  height: 11.4%;
+  width: 200px;
+  height: 40px;
   font-weight: bold;
   box-shadow: 2px 2px 3px rgb(102, 102, 102);
+}
+.button:hover{
+  cursor:pointer;
+  box-shadow:3px 3px 4px rgb(102, 102, 102);
 }
 
 .container-win{
@@ -39,12 +51,10 @@ main {
   background-color: white;
   justify-content: center;
   flex-direction: column;
-  align-items: space-around;
   border-radius: 5%;
   margin-top: 100px;
-  width: 261px;
+  width: 260px;
   height:358px;
-
 }
 h1{
   color:#740059 ;
@@ -64,28 +74,29 @@ hr{
  }
 #score{
   background-color: white;
-  justify-content: space-around;
-  margin-bottom: 10px;
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 25px;
+  height: 20px;
+  width: 25px;
 }
 
 .trophy{
-  width:50px;
-  height: 50px;
+  width:45px;
+  height: 45px;
   display: flex;
+  align-items: center;
   align-self: flex-end;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  margin-top:2px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
-.circus {
-  display: flex;
-  margin-top: 30px;
-  margin-right: 50%;
+.circus img{
+ display: flex;
+ margin-right:215px;
+ margin-top:20px;
+
 }
 .happy-clown {
   display: flex;
-  margin-left: 250px;
-  margin-bottom: 40px;
+  margin-left: 45%;
+  margin-bottom: 10px;
 }
