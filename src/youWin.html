@@ -10,24 +10,28 @@
 </head>
 <body>
     <main>
-            <button class="setting-button" id="settings">
+            <button class="setting-button" id="settings" onclick="location.href='/configuracion.html'">
             <img src="../imagen/settings.svg" alt="settings">
             </button>    
         <div class="container-win">
+           <div class="header">
            <h1>TÚ GANAS</h1> </h1>
            <img src="../imagen/trophy.svg" class="trophy">
+           </div>
            <hr>
            <button class="button">Puntuación<span id="score">00</span></button>
-           <button class="button">Guardar puntuación</button>
-           <button class="button">Menú principal</button>
-           <button class="button">Volver a jugar</button>
+           <button class="button" onclick="location.href='/puntuacion.html'">Guardar puntuación</button>
+           <button class="button" onclick="location.href='/index.html'">Menú principal</button>
+           <button class="button" onclick="location.href='/index.html'">Volver a jugar</button>
         </div>
-        <div class="circus"> 
-        <img src="../imagen/circus.svg" alt="circus">  
-        </div>    
-        <div class="happy-clown">
-        <img src="../imagen/happy-clown.svg" alt="happy-clown">
-        </div> 
+        <div class="characters">
+         <div class="circus"> 
+         <img src="../imagen/circus.svg" alt="circus">  
+         </div>    
+         <div class="happy-clown">
+         <img src="../imagen/happy-clown.svg" alt="happy-clown">
+         </div> 
+        </div>
     </main>     
 </body>
 </html>

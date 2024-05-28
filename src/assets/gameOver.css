@@ -1,19 +1,17 @@
+@import "style.css";
 
 main {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  gap:25px;
 }  
  .setting-button{
   border:none;
   text-align: right;
   background: none;
-  top: 25px;
   width: 100%;
-  right: 20px;
-  box-shadow: none;
   border-radius: 50%;
-} 
+ }
 .setting-button img{
   box-shadow: 3px 3px 5px black;
   border-radius:50%;
@@ -22,71 +20,72 @@ main {
   cursor: pointer;
   box-shadow: 3px 3px 10px black;
  }
+ .container-over{
+  display:flex;
+  border: 2px solid var(--primary);
+  border-radius:10px;
+  background-color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:10px 0;
+  width: 260px;
+  height:358px;
+}
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
   margin-left:30px;
-  padding: 10px 15px;
-  background-color: #FFB52B;
-  color: #740059;
-  border: 1px outset #FFB52B ;
-  border-radius: 20px;
+  padding: 0px 15px;
+  background-color: var(--primary);
+  color: var(--secundary);
+  border-radius: 10px;
   width: 200px;
   height: 40px;
   font-weight: bold;
   box-shadow: 2px 2px 3px rgb(102, 102, 102);
+  border:none;
 }
 .button:hover{
   cursor:pointer;
   box-shadow: 3px 3px 4px rgb(102, 102, 102);
 }
-.container-over{
-  display:flex;
-  border: 0.5px solid #FFB52B;
-  border-width: medium;
-  border-radius:20px;
-  background-color: white;
-  justify-content: center;
-  flex-direction: column;
-  align-items: space-around;
-  border-radius: 5%;
-  margin-top:100px;
-  width: 261px;
-  height:358px;
-}
+
 h1{
-  color:#740059 ;
+  color: var(--secundary);
   text-shadow: 
-  2px 2px 0 #FFB52B,
-  -2px 2px 0 #FFB52B,
-  -2px -2px 0 #FFB52B,
-  2px -2px 0 #FFB52B;
+  2px 2px 0 var(--primary),
+  -2px 2px 0 var(--primary),
+  -2px -2px 0 var(--primary),
+  2px -2px 0 var(--primary);
   border-radius: 20px;
   text-align:center;
   margin-right: 15px;
   font-size: 36px;
-  font-weight: bold;
 }
 hr{
-  border-top:2px solid #FFB52B;
+  border-top:2px solid var(--primary);
+  width:100%;
 }
 #score{
   background-color: white;
   height: 20px;
-  width: 20px;;
+  width: 25px;;
   font-size: 16px;
   margin-left: 20px;
 }
-
-.circus {
+.characters{
   display: flex;
+  width: 100%;
+  justify-content:space-between;
   margin-top: 20px;
-  margin-right: 55%;
 }
-.sad-clown {
-  display: flex;
-  margin-left: 45%;
-  margin-bottom: 20px;
+.circus{
+margin-top: 20px;
+}
+
+.sad-clown { 
+  margin-top: 70px;
+  padding-right: 60px;
 }
