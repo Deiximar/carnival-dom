@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/youWin.css">
+    <title>youWin</title>
+</head>
+<body>
+    <main>
+            <button class="setting-button" id="settings" onclick="location.href='/configuracion.html'">
+            <img src="../imagen/settings.svg" alt="settings">
+            </button>    
+        <div class="container-win">
+           <div class="header">
+           <h1>TÚ GANAS</h1> </h1>
+           <img src="../imagen/trophy.svg" class="trophy">
+           </div>
+           <hr>
+           <button class="button">Puntuación<span id="score">00</span></button>
+           <button class="button" onclick="location.href='/puntuacion.html'">Guardar puntuación</button>
+           <button class="button" onclick="location.href='/index.html'">Menú principal</button>
+           <button class="button" onclick="location.href='/index.html'">Volver a jugar</button>
+        </div>
+        <div class="characters">
+         <div class="circus"> 
+         <img src="../imagen/circus.svg" alt="circus">  
+         </div>    
+         <div class="happy-clown">
+         <img src="../imagen/happy-clown.svg" alt="happy-clown">
+         </div> 
+        </div>
+    </main>     
+</body>
+</html>
