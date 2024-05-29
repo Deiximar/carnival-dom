@@ -1,116 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-}
-
-body {
-    background-image: url(./imagen/background.jpg);
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
-
-#return {
-    margin-left: -40px;
-    border: none;
-    background: transparent;   
-    position: absolute;
-    top: 10px;
-}
-
-h1 {
-    color: #740059; 
-    text-align: center;
-    margin-top: 130px;
-    font-size: 32px;
-}
+@import "style.css";
 
 main {
     font-size: 18px;
-    color: #740059; 
+    color: var(--secundary); 
     text-align: center;
 }
 
 main button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 10px;
-    padding: 15px 60px;
+    padding: 10px 60px;
 }
 
-.music {
+#return {
+    border: none;
+    background: none;  
+    box-shadow: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 65px;
-    margin-top: 10px;
+    top: 10px;
+    width: 100%;
+    margin-top: -5px;
+    margin-left: -50px;
 }
 
-.sound {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 65px;
-}
-
-.language {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 65px;
-}
-
-#userInput {
-    width: 200px;
-    border: 2px solid #FFB52B;
-    border-radius: 10px;
+h1 {
+    color: var(--secundary); 
     text-align: center;
-    margin-left: 65px;
-    color: #740059;
-    font-size: 18px;
 }
 
-::placeholder {
-    color: #740059;
-    font-size: 18px;
+.music, .sound, .language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-bottom: -15px;
+    font-weight: bolder;
 }
 
 #music, #sound, #spanish, #no-music, #mute, #english, #check {
     border: none;
     background: transparent;
+    box-shadow: none;
+}
+
+#userInput {
+    width: 200px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px;
+    color: var(--secundary);
+    font-size: 18px;
+}
+
+::placeholder {
+    color: var(--secundary);
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 355px;
+    text-align: center;
+    width: 300px;
     height: 50px;
     border: none;
     border-radius: 10px;
     box-shadow: 4px 4px 5px black;
-    background-color: #FFB52B;
-    color: #740059;
-    font-size: 18px;
-    margin-left: 60px;
-    margin-top: 30px;
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-family: var(--font-family);
+    font-weight: bolder;
+    margin-left: 40px;
+    padding: 10px 60px;
 }
 
 .circus {
     display: flex;
-    width: 100%;
-    margin-top: 70px;
+    margin-right: 200px;
 }
 
 .clown {
     display: flex;
-    margin-left: 340px;
+    margin-left: 250px;
+    margin-top: -10px;
 }
-
 
 
 

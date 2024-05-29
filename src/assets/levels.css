@@ -1,0 +1,57 @@
+@import "style.css";
+
+main {
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.level-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-family: var(--font-family);
+    font-weight: bolder;
+    font-size: 0.75em;
+    margin-left: 65px;
+    margin: 10px;
+    padding: 10px 60px;
+}
+
+#return, #settings {
+    border: none;
+    background: none;  
+    box-shadow: none;
+    top: 10px;
+    width: 65px;
+}
+
+h1 {
+    color: var(--secundary); 
+    text-align: center;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.circus {
+    display: flex;
+    margin-top: 125px;
+    margin-right: 200px;
+}
+
+.clown {
+    display: flex;
+    margin-left: 250px;
+}
