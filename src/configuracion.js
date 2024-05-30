@@ -52,7 +52,7 @@ document.getElementById('check').addEventListener('click', function() {
 
         // Esconder el formulario y volver a mostrar el botón de cambio de usuario
         document.getElementById('userForm').style.display = 'none';
-        document.getElementById('changeuser').style.display = 'block';
+        document.getElementById('changeuser').style.display = 'flex';
         userInput.value = ''; // Limpiar el campo de texto
     } else {
         alert('Por favor, escribe tu nombre de usuario');
