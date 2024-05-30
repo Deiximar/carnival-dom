@@ -1,3 +1,7 @@
+:root {
+  --initial-y-balloon: 450px;
+}
+
 main {
   justify-content: stretch;
   padding: 10px;
@@ -48,22 +52,21 @@ main {
   margin: 10px;
 }
 
-.level {
+.level-text {
   font-size: 1em;
   color: var(--secundary);
   text-align: center;
 }
 
-.target-text {
+.description {
   font-size: 0.6em;
   text-align-last: center;
   font-weight: bold;
 }
 
 .target-score,
-.target-time {
+.limit-time {
   color: var(--primary);
-  -webkit-text-stroke: 0.5px black;
 }
 
 .carpas img {
@@ -73,13 +76,14 @@ main {
 
 .board-game {
   flex-grow: 1;
-  cursor: url(../../imagen/peephole.svg), auto;
+  cursor: url(../../imagen/peephole.svg) 20 20, auto;
   position: relative;
 }
 
 .balloon-container {
-  transform: translateY(525px);
+  transform: translateY(var(--initial-y-balloon));
   width: fit-content;
+  padding: 5px;
   display: inline-block;
   position: absolute;
   /* animation: balloon-ascent 3s linear; */
@@ -141,9 +145,9 @@ main {
 
 @keyframes balloon-ascent {
   0% {
-    transform: translateY(520px);
+    transform: translateY(var(--initial-y-balloon));
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-150px);
   }
 }

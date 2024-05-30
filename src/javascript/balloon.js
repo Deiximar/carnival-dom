@@ -1,41 +1,51 @@
 export class Balloon {
-  constructor(size, speed) {
-    this.size = size;
-    this.speed = speed;
-    this.point = this.calculate_point(this.size);
-    this.color = this.create_color()
-    this.element = this.create_balloon_element()
+  constructor(level) {
+    this.level = level;
+    this.speed = this.getSpeed(this.level);
+    this.point = this.calculatePoint();
+    this.color = this.createColor();
+    this.element = this.createBalloonElement();
   }
 
-  create_color() {
+  createColor() {
     const colors = ['red', 'purple', 'deeppink', 'green', 'yellow', 'blue', 'orange', 'tomato', 'rebeccapurple', 'chocolate', 'cornflowerblue', 'crimson'];
     const randomNumber = Math.floor(Math.random() * (colors.length));
     return colors[randomNumber];
   }
 
-  create_balloon_element() {
+  createBalloonElement() {
     const balloonElement = document.createElement('div');
     balloonElement.style.backgroundColor = this.color;
     balloonElement.style.color = this.color;
     balloonElement.className = "balloon";
 
-    if (this.size == 3) {
+    if (this.level == 1) {
       balloonElement.className += " balloon-easy"
-    } else if (this.size == 2) {
+    } else if (this.level == 2) {
       balloonElement.className += " balloon-medium"
-    } else if (this.size == 1) {
+    } else if (this.level == 3) {
       balloonElement.className += " balloon-hard"
     }
-
     return balloonElement;
   }
 
-  calculate_point(size) {
-    if (size == 1) {
+  getSpeed(level) {
+    if (level == 1) {
+      return 6
+    } else if (level == 2) {
+      return 5
+    } else if (level == 3) {
+      return 4
+    }
+
+  }
+
+  calculatePoint() {
+    if (this.level == 3) {
       return 10;
-    } else if (size == 2) {
+    } else if (this.level == 2) {
       return 5;
-    } else if (size == 3) {
+    } else if (this.level == 1) {
       return 2;
     }
   }

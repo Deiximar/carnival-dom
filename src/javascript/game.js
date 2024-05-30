@@ -1,58 +1,83 @@
-import { Balloon } from 'balloon'
+import { Balloon } from './balloon.js'
 export class Game {
   constructor(level) {
-    init(level)
-  }
-
-  init(level) {
     this.level = level;
     this.score = 0;
-    this.live = 3;
-    this.time_limit = set_time_limit(this.level);
-    this.ballons = generate_balloons(this.level);
+    this.lives = 3;
+    this.interval = this.getInterval(this.level);
+    this.targetScore = this.setTargetScore(this.level);
+    this.timeLimit = this.setTimeLimit(this.level);
   }
 
-  set_time_limit(level) {
-    if (level === 'easy') {
+
+  setTimeLimit(level) {
+    if (level === 1) {
       return 60;
-    } else if (level === 'medium') {
+    } else if (level === 2) {
       return 45;
-    } else if (level === 'hard') {
+    } else if (level === 3) {
       return 30;
     }
   }
 
-  generate_balloons(level) {
-    const balloons = [];
-
-    let speed, size, count;
-
-    if (level == "easy") {
-      speed = 8
-      size = 3
-      count = 10
-    } else if (level == "medium") {
-      speed = 5
-      size = 2
-      count = 20
-    } else if (level == "hard") {
-      speed = 3
-      size = 1
-      count = 30
+  setTargetScore(level) {
+    if (level === 1) {
+      return 50;
+    } else if (level === 2) {
+      return 70;
+    } else if (level === 3) {
+      return 100;
     }
-
-    for (i == 0; i <= count; i++) {
-      balloons.push(new Balloon(speed, size))
-    }
-    return balloons;
   }
 
-  shoot_balloon(balloon) {
-    this.score += balloon.points;
-    this.ballons.remove(balloon);
+
+
+  renderBalloon() {
+    let balloon = new Balloon(this.level);
+    console.log(balloon)
+    const boardGame = document.getElementById('board-game');
+    const balloonContainer = document.createElement('div');
+    const positionX = Math.floor(Math.random() * (350 - 10)) + 10;
+
+    balloonContainer.className = 'balloon-container';
+
+    balloonContainer.style.animation = `balloon-ascent ${balloon.speed}s linear`
+
+    balloonContainer.style.left = `${positionX}px`;
+    balloonContainer.addEventListener('click', () => this.shootBalloon(balloon.point, balloonContainer));
+    console.log(this.score)
+    balloonContainer.appendChild(balloon.createBalloonElement());
+    boardGame.appendChild(balloonContainer);
+
+
   }
 
-  balloon_missed(balloon) {
+  start() {
+    setInterval(() => {
+      this.renderBalloon();
+      this.renderBalloon();
+      this.renderBalloon();
+    }, this.interval)
+  }
+
+  getInterval(level) {
+    if (level === 1) {
+      return 1500
+    } else if (level === 2) {
+      return 1300
+    } else if (level === 3) {
+      return 1100
+    }
+  }
+
+  shootBalloon(point, container) {
+    console.log(point + " this is my ballon")
+    this.score += point;
+    container.remove();
+    console.log('score =' + this.score);
+  }
+
+  balloonMissed(balloon) {
     this.lives -= 1
     this.balloons.remove(balloon)
     if (this.lives <= 0) {
@@ -60,7 +85,7 @@ export class Game {
     }
   }
 
-  end_game() {
+  endGame() {
     console.log(`Game Over! Your score: ${self.score}`);
   }
 
