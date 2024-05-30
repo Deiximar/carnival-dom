@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levels</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel='stylesheet'>
+    <link rel="stylesheet" href="/src/assets/style.css">
+    <link rel="stylesheet" href="/src/assets/levels.css">
+</head>
+
+<body>
+    <main>
+        <div class="nav-buttons">
+            <button id="return" onclick="location.href='index.html'">
+                <img src="/imagen/return.svg" alt="return button">
+            </button>
+
+            <button id="settings" onclick="location.href='configuracion.html'">
+                <img src="/imagen/settings.svg" alt="settings button">
+            </button>
+        </div>
+        <h1>Escoge el nivel</h1>
+
+        <button class="level-button" onclick="chooseLevel('easy')">Fácil</button>
+        <button class="level-button" onclick="chooseLevel('medium')">Medio</button>
+        <button class="level-button" onclick="chooseLevel('hard')">Difícil</button>
+
+
+        <section class="container">
+            <div class="circus">
+                <img src="/imagen/circus.svg" alt="circus">
+            </div>
+            <div class="clown">
+                <img src="/imagen/clown.svg" alt="clown">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
