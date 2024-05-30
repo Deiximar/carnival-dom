@@ -77,28 +77,54 @@ main {
   position: relative;
 }
 
-.ballon-container {
+.balloon-container {
   transform: translateY(525px);
   width: fit-content;
   display: inline-block;
   position: absolute;
-  animation: balloon-ascent 5s linear;
+  /* animation: balloon-ascent 3s linear; */
   animation-iteration-count: infinite;
 }
 
-.ballon {
-  width: 35px;
-  height: 50px;
+.balloon {
   border-radius: 50%;
   position: relative;
   animation: balloon-float 4s ease-in-out infinite;
   transform-origin: bottom center;
 }
 
-.ballon::before {
+.balloon::before {
   content: "▲";
-  font-size: 0.4em;
   position: absolute;
+}
+
+.balloon-easy {
+  width: 70px;
+  height: 90px;
+}
+
+.balloon-easy::before {
+  font-size: 0.9em;
+  bottom: -25px;
+  left: 18px;
+}
+
+.balloon-medium {
+  width: 55px;
+  height: 70px;
+}
+.balloon-medium::before {
+  font-size: 0.65em;
+  bottom: -16px;
+  left: 15px;
+}
+
+.balloon-hard {
+  width: 35px;
+  height: 50px;
+}
+.balloon-hard::before {
+  font-size: 0.4em;
   bottom: -10px;
   left: 10px;
 }
