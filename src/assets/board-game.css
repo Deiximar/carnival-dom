@@ -22,7 +22,7 @@ main {
   border-radius: 10px;
   box-shadow: 4px 4px 5px black;
   font-weight: bold;
-  height: fit-content;
+  height: 40px;
   width: 80px;
   text-align: center;
 }
@@ -47,7 +47,7 @@ main {
   width: 45px;
 }
 
-.lives {
+.lives-container {
   display: flex;
   margin: 10px;
 }

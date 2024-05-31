@@ -1,27 +1,16 @@
 import { Game } from './game.js';
 
-const nivel1 = {
-  nivel: 1,
-  score: 50,
-  time: 60
-}
 
-const nivel2 = {
-  nivel: 2,
-  score: 70,
-  time: 30
-}
-
-const nivel3 = {
-  nivel: 3,
-  score: 100,
-  time: 30
-}
 function starGame(level = 1) {
   const myGame = new Game(level);
   showText(myGame);
+  document.getElementById('timer').innerHTML = `${myGame.timeLimit}s`;
+  setTimeout(() => {
+    myGame.updateClock();
+  }, 2100);
   myGame.start();
 }
+starGame(1)
 
 function showText(game) {
   const title = document.querySelector('.level-text');
@@ -42,7 +31,7 @@ function showText(game) {
     setInterval(() => {
       let timePassed = Date.now() - start;
       if (timePassed >= 2100) {
-        clearInterval(timer); // terminar la animación después de 2 segundos
+        clearInterval(); // terminar la animación después de 2 segundos
         return;
       }
       opacity(title, description);
@@ -61,5 +50,4 @@ function opacity(title, description) {
 }
 
 
-starGame(2);
 

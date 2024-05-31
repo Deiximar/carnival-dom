@@ -31,13 +31,12 @@ export class Balloon {
 
   getSpeed(level) {
     if (level == 1) {
-      return 6
+      return 8
     } else if (level == 2) {
-      return 5
+      return 7
     } else if (level == 3) {
-      return 4
+      return 6
     }
-
   }
 
   calculatePoint() {
