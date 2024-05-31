@@ -3,8 +3,8 @@
 main {
   flex-direction: column;
   align-items: center;
-  gap:40px;
-} 
+  gap:40px; 
+}
 .setting-button{
   border:none;
   text-align: right;
@@ -19,7 +19,7 @@ main {
 .setting-button img:hover{
  cursor: pointer;
  box-shadow: 3px 3px 10px black;
-}
+} 
 .container-win{
   display:flex;
   border: 2px solid var(--primary);
@@ -80,19 +80,81 @@ hr{
   margin-left: 25px;
   height: 20px;
   width: 25px;
-}
+} 
 
 .trophy{
   width:45px;
   height: 45px;
-}
+}  
+
 .characters{
   display: flex;
   width: 100%;
   justify-content:space-between;
   margin-top: 20px;
-}
-.happy-clown{
+} 
+ .happy-clown{
   margin-top: 48px;
   padding-right: 100px;
+} 
+@media only screen and (min-width: 750px) {
+main {
+ grid-template-areas:
+  " setting"
+  "win "
+  "characters";
+ }
+.setting-button {
+  grid-area: setting;
+  margin-left: -30px;
 }
+.container-win{
+  grid-area: win;
+  margin-left:40%;
+  width: 370px;
+  height:470px;
+  margin-top: 30px;
+
+}
+.button{
+  width: 300px;
+  height: 60px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1{
+  font-size:40px ;
+  margin-bottom: -120px;
+}
+
+.trophy{
+  width: 75px;
+  height: 70px;
+}
+hr{
+  width: 100%;
+}
+#score{
+  width:40px;
+  height: 30px;
+  font-size: 24px;
+}
+.characters{
+  grid-area: characters;
+}
+.circus{
+  width: 45%;
+
+}
+.circus>img{
+  width: 80%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+#happy-clown{
+  width:140px;
+  height:240px;
+}
+}
+
