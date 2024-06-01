@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,35 @@
     <link rel="stylesheet" href="assets/gameOver.css">
     <title>GameOver</title>
 </head>
+
 <body>
     <main>
-            <button  class="setting-button" id="settings" onclick="location.href='configuracion.html'">
-            <img  src="../imagen/settings.svg" alt=settings">
-            </button>
+        <button class="setting-button" id="settings" onclick="location.href='configuracion.html'">
+            <img src="../imagen/settings.svg" alt=settings">
+        </button>
         <div class="container-over">
             <h1>TÚ PIERDES</h1>
             <hr>
             <button class="button">Puntuación<span id="score">00</span></button>
             <button class="button" onclick="location.href='puntuacion.html'">Guardar puntuación</button>
             <button class="button" onclick="location.href='../index.html'">Página principal</button>
-            <button class="button" onclick="location.href='board-game.html'">Volver a jugar</button>
+            <button class="back-play-button button">Volver a jugar</button>
         </div>
-            <div class="characters">
-             <div class="circus"> 
-             <img src="../imagen/circus.svg" alt="circus">  
-             </div> 
-             <div class="sad-clown">
-             <img src="../imagen/sad-clown.svg" alt="clown">
-             </div>
-            </div>   
-    </main>          
+        <div class="characters">
+            <div class="circus">
+                <img src="../imagen/circus.svg" alt="circus">
+            </div>
+            <div class="sad-clown">
+                <img src="../imagen/sad-clown.svg" alt="clown">
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('score').innerHTML = localStorage.getItem("newScore");
+        level = localStorage.getItem('level');
+        console.log(' local storage de leve ', level);
+        document.querySelector('.back-play-button').addEventListener('click', () => location.href = `board-game.html?level=${level}`);
+    </script>
 </body>
+
 </html>

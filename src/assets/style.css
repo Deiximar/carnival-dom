@@ -36,9 +36,8 @@ main {
   main {
     width: 100vw;
     display: grid;
-    grid-template-areas: 
-    "banner banner banner"
-    "tent clown  menu"
-    ;
+    grid-template-areas:
+      "banner banner banner"
+      "tent clown  menu";
   }
 }
