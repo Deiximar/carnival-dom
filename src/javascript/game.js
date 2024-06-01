@@ -21,7 +21,7 @@ export class Game {
 
   setTargetScore(level) {
     if (level === 1) {
-      return 250;
+      return 200;
     } else if (level === 2) {
       return 350;
     } else if (level === 3) {
@@ -52,7 +52,6 @@ export class Game {
   }
 
   start() {
-    let timeStopped = this.timeLimit
     const waitTime = Math.floor(this.intervalTime / 3);
 
     this.intervalId = setInterval(() => {
@@ -65,11 +64,11 @@ export class Game {
 
   getInterval(level) {
     if (level === 1) {
-      return 1300
+      return 1400
     } else if (level === 2) {
-      return 1200
+      return 1300
     } else if (level === 3) {
-      return 1100
+      return 1300
     }
   }
   updateClock() {

@@ -21,7 +21,7 @@
             <button class="button">Puntuación<span id="score">00</span></button>
             <button class="button" onclick="location.href='puntuacion.html'">Guardar puntuación</button>
             <button class="button" onclick="location.href='../index.html'">Página principal</button>
-            <button class="button" onclick="location.href='board-game.html'">Volver a jugar</button>
+            <button class="back-play-button button">Volver a jugar</button>
         </div>
         <div class="characters">
             <div class="circus">
@@ -34,6 +34,9 @@
     </main>
     <script>
         document.getElementById('score').innerHTML = localStorage.getItem("newScore");
+        level = localStorage.getItem('level');
+        console.log(' local storage de leve ', level);
+        document.querySelector('.back-play-button').addEventListener('click', () => location.href = `board-game.html?level=${level}`);
     </script>
 </body>
 

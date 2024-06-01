@@ -7,10 +7,13 @@ function starGame(level = 1) {
   document.getElementById('timer').innerHTML = `${myGame.timeLimit}s`;
   setTimeout(() => {
     myGame.updateClock();
-  }, 2100);
+  }, 1000);
   myGame.start();
 }
-starGame(1)
+let params = new URLSearchParams(document.location.search);
+let level = parseInt(params.get("level"), 10);
+localStorage.setItem("level", level)// is the number 18
+starGame(level);
 
 function showText(game) {
   const title = document.querySelector('.level-text');
@@ -21,7 +24,7 @@ function showText(game) {
 
   level.innerHTML = game.level
   targeScore.innerHTML = `${game.targetScore} puntos`;
-  limitTime.innerHTML = `${game.time_limit} segundos`;
+  limitTime.innerHTML = `${game.timeLimit} segundos`;
 
   const start = Date.now();
   description.style.opacity = 1;
