@@ -110,7 +110,7 @@ main {
 }
 .container-win{
   grid-area: win;
-  margin-left:40%;
+  margin-left:576px;
   width: 370px;
   height:470px;
   margin-top: 30px;
@@ -144,13 +144,16 @@ hr{
   grid-area: characters;
 }
 .circus{
-  width: 45%;
+  width: 648px;
 
 }
 .circus>img{
-  width: 80%;
-  height: 100%;
-  padding-bottom: 30px;
+  width: 525px;
+  height: 265px;
+  /* padding-bottom: 30px; */
+}
+.happy-clown{
+  margin-top: 70px;
 }
 #happy-clown{
   width:140px;
