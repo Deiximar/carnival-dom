@@ -1,7 +1,11 @@
 import { Game } from './game.js';
 
-
 function starGame(level = 1) {
+  if (localStorage.getItem('musicDisabled') !== 'true') {
+    document.querySelector('audio').play();
+  }
+
+
   const myGame = new Game(level);
   showText(myGame);
   document.getElementById('timer').innerHTML = `${myGame.timeLimit}s`;
