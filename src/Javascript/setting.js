@@ -1,33 +1,51 @@
-function changeButton() {
+function showMusicSetting() {
     const musicbutton = document.getElementById('music');
     const nomusicbutton = document.getElementById('no-music');
-    
-    if (musicbutton.style.display === 'none') {
-        musicbutton.style.display = 'inline-block';
-        nomusicbutton.style.display = 'none';
-    } else {
+
+    if (localStorage.getItem('musicDisabled') === 'true') {
         musicbutton.style.display = 'none';
         nomusicbutton.style.display = 'inline-block';
+
+    } else {
+        musicbutton.style.display = 'inline-block';
+        nomusicbutton.style.display = 'none';
     }
 }
 
-function changeButton2() {
+function changeMusicSetting() {
+    if (localStorage.getItem('musicDisabled') === 'true') {
+        localStorage.setItem('musicDisabled', 'false');
+    } else {
+        localStorage.setItem('musicDisabled', 'true');
+    }
+    showMusicSetting();
+}
+
+function showSoundSetting() {
     const soundbutton = document.getElementById('sound');
     const mutebutton = document.getElementById('mute');
-    
-    if (soundbutton.style.display === 'none') {
-        soundbutton.style.display = 'inline-block';
-        mutebutton.style.display = 'none';
-    } else {
+
+    if (localStorage.getItem('soundDisabled') === 'true') {
         soundbutton.style.display = 'none';
         mutebutton.style.display = 'inline-block';
+    } else {
+        soundbutton.style.display = 'inline-block';
+        mutebutton.style.display = 'none';
     }
+}
+function changeSoundSetting() {
+    if (localStorage.getItem('soundDisabled') === 'true') {
+        localStorage.setItem('soundDisabled', 'false');
+    } else {
+        localStorage.setItem('soundDisabled', 'true');
+    }
+    showSoundSetting();
 }
 
 function changeButton3() {
     const spanishbutton = document.getElementById('spanish');
     const englishbutton = document.getElementById('english');
-    
+
     if (spanishbutton.style.display === 'none') {
         spanishbutton.style.display = 'inline-block';
         englishbutton.style.display = 'none';
@@ -38,12 +56,12 @@ function changeButton3() {
 }
 
 
-document.getElementById('changeuser').addEventListener('click', function() {
+document.getElementById('changeuser').addEventListener('click', function () {
     document.getElementById('changeuser').style.display = 'none';
     document.getElementById('userForm').style.display = 'flex';
 });
 
-document.getElementById('check').addEventListener('click', function() {
+document.getElementById('check').addEventListener('click', function () {
     const userInput = document.getElementById('userInput');
     const userName = userInput.value.trim();
 
@@ -58,3 +76,6 @@ document.getElementById('check').addEventListener('click', function() {
         alert('Por favor, escribe tu nombre de usuario');
     }
 });
+
+showMusicSetting();
+showSoundSetting();

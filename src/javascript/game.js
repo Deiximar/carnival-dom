@@ -82,6 +82,10 @@ export class Game {
   }
 
   shootBalloon(point, container) {
+    if (localStorage.getItem('soundDisabled') !== 'true') {
+      const audio = new Audio('../music/explote-balloon.mp3');
+      audio.play();
+    }
     this.score += point;
     document.getElementById('score').innerHTML = this.score;
     container.remove();
