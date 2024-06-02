@@ -150,8 +150,16 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
-
 }
+
+#sound {
+    margin-right: 70px;
+}
+
+#mute {
+    margin-right: 70px;
+}
+
 .icon img {
     width: 55px;
 }

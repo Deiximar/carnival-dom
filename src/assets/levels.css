@@ -1,71 +1,117 @@
 @import "style.css";
 
 main {
-    align-items: center;
-    gap: 20px;
+  align-items: center;
+  gap: 20px;
 }
 
 .nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-buttons img {
-    width: 45px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 5px black;
-    border: none;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+  border: none;
 }
 
 .nav-buttons img:hover {
-    cursor: pointer;
-    box-shadow: 3px 3px 10px black;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
 }
 
-#return, #settings {
-    border: none;
-    background: none;
+#return,
+#settings {
+  border: none;
+  background: none;
 }
 
 h1 {
-    color: var(--secundary); 
-    text-align: center;
-    font-size: 1em;
+  color: var(--secundary);
+  text-align: center;
+  font-size: 1em;
 }
 
 .level-button {
-    width: 180px;
-    height: 48px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 4px 4px 5px black;
-    background-color: var(--primary);
-    color: var(--secundary);
-    font-family: var(--font-family);
-    font-size: 0.8em;
-    font-weight: bolder;
-    margin: 10px 0px;
-    padding: 5px;
+  width: 180px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
+  background-color: var(--primary);
+  color: var(--secundary);
+  font-family: var(--font-family);
+  font-size: 0.8em;
+  font-weight: bolder;
+  margin: 10px 0px;
+  padding: 5px;
 }
 
 .level-button:hover {
-    cursor: pointer;
-    box-shadow: 4px 4px 10px black;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px black;
 }
 
 .characters {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .circus {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .clown {
-    margin-top: 160px;
-    margin-right: 40px;
+  margin-top: 160px;
+  margin-right: 40px;
+}
+
+@media only screen and (min-width: 750px) {
+  main {
+    display: flex;
+  }
+
+  #return {
+    margin-top: 35px;
+    margin-left: 35px;
+  }
+
+  #return img {
+    width: 70px;
+  }
+
+  #settings {
+    margin-top: 35px;
+    margin-right: 35px;
+  }
+
+  #settings img {
+    width: 70px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .level-button {
+    width: 480px;
+    height: 85px;
+    font-size: 1em;
+  }
+
+  .circus {
+    width: 525px;
+    height: 265px;
+    margin-top: 80px;
+  }
+
+  .clown {
+    margin-top: 100px;
+    margin-right: 100px;
+  }
 }
