@@ -16,12 +16,18 @@
 
 <body>
   <main>
-    <img id="logo" src="/imagen/logo.svg" alt="Red circus tents with the text 'Pop the Balloon'">
+    <div class="logo-container">
+      <img id="logo" src="/imagen/logo.svg" alt="Red circus tents with the text 'Pop the Balloon'">
 
-    <button class="button" onclick="location.href='src/board-game.html?level=1'">Jugar</button>
-    <button class="button" onclick="location.href='src/levels.html'">Niveles</button>
-    <button class="button" onclick="location.href='src/como-jugar.html'">Cómo jugar</button>
-    <button class="button" onclick="location.href='src/configuracion.html'">Configuración</button>
+    </div>
+
+    <div class="menu">
+      <button class="button" onclick="location.href='src/board-game.html?level=1'">Jugar</button>
+      <button class="button" onclick="location.href='src/levels.html'">Niveles</button>
+      <button class="button" onclick="location.href='src/como-jugar.html'">Cómo jugar</button>
+      <button class="button" onclick="location.href='src/configuracion.html'">Configuración</button>
+    </div>
+
 
     <div class="characters">
       <div class="tents">
@@ -29,7 +35,7 @@
         <img class="central-tent" src="/imagen/tent.svg" alt="Red circus tent">
         <img class="lateral-tent" src="/imagen/tent.svg" alt="Red circus tent">
       </div>
-      <img src="/imagen/clown-balloon.svg" alt="Clown holding three balloons">
+      <img class="clown" src="/imagen/clown-balloon.svg" alt="Clown holding three balloons">
     </div>
   </main>
 </body>

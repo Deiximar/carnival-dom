@@ -35,16 +35,21 @@ main {
   width: 120px;
 }
 
-.play-stop-button {
+.back-button {
   background: none;
   border: none;
   text-align: center;
 }
 
-.stop-button,
-.play-button {
+.back-button img {
   margin: 0 auto;
   width: 45px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+}
+.back-button img:hover {
+  box-shadow: 3px 3px 10px black;
+  cursor: pointer;
 }
 
 .lives-container {
@@ -69,7 +74,10 @@ main {
   color: var(--primary);
 }
 
-.carpas img {
+.tents {
+  align-self: center;
+}
+.tents img {
   width: 385px;
   height: 155px;
 }
@@ -149,5 +157,20 @@ main {
   }
   100% {
     transform: translateY(-150px);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  main {
+    display: flex;
+  }
+  .tents {
+    align-self: center;
+  }
+  .tents img {
+    align-self: center;
+    width: 1000px;
+    height: 410px;
+    max-width: 100%;
   }
 }

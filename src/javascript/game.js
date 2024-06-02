@@ -35,13 +35,13 @@ export class Game {
 
       const boardGame = document.getElementById('board-game');
       const balloonContainer = document.createElement('div');
-      const positionX = Math.floor(Math.random() * (350 - 10)) + 10;
+      const positionX = Math.floor(Math.random() * (85 - 10)) + 10;
 
       balloonContainer.className = 'balloon-container';
 
       balloonContainer.style.animation = `balloon-ascent ${balloon.speed}s linear`
 
-      balloonContainer.style.left = `${positionX}px`;
+      balloonContainer.style.left = `${positionX}%`;
       balloonContainer.addEventListener('click', () => this.shootBalloon(balloon.point, balloonContainer));
       balloonContainer.addEventListener('animationend', () => this.balloonMissed(balloonContainer));
 
