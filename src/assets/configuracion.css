@@ -123,6 +123,73 @@ h1 {
 }
 
 
+@media only screen and (min-width: 750px) {
+    
+main {
+    display: flex;
+}
+    
+#return {
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+#return img {
+    width: 70px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.music, .sound, .language {
+    font-size: 30px;
+}
+
+.music, .sound, .language {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
+}
+.icon img {
+    width: 55px;
+}
+
+.button {
+    height: 85px;
+    width: 480px;
+    font-size: 30px;
+}
+
+.characters {
+    margin: 0;
+}
+
+.circus {
+    width: 525px;
+    height: 265px;
+}
+
+.clown {
+    margin-top: 5px;
+    margin-right: 150px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
