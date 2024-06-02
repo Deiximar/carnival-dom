@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/gameOver.css">
+    <title>GameOver</title>
+</head>
+<body>
+    <main>
+            <button  class="setting-button" id="settings" onclick="location.href='configuracion.html'">
+            <img  src="../imagen/settings.svg" alt=settings">
+            </button>
+        <div class="container-over">
+            <h1>YOU LOSE</h1>
+            <hr>
+            <button class="button">Score<span id="score">00</span></button>
+            <button class="button" onclick="location.href='puntuacion.html'">Save score</button>
+            <button class="button" onclick="location.href='../index.html'">Main menu</button>
+            <button class="button" onclick="location.href='board-game.html'">Play again</button>
+        </div>
+            <div class="characters">
+             <div class="circus"> 
+             <img src="../imagen/circus.svg" alt="circus">  
+             </div> 
+             <div class="sad-clown">
+             <img src="../imagen/sad-clown.svg" alt="clown">
+             </div>
+            </div>   
+    </main>  
+    <script src="/src/Javascript/idiomas.js"></script>
+    <script src="../configuracion.js"></script>        
+</body>
+</html>

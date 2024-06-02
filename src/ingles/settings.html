@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/configuracion.css">
+</head>
+
+<body>
+    <main>
+
+        <button id="return" onclick="location.href='index-english.html'">
+            <img src="/imagen/return.svg" alt="return button">
+        </button>
+
+
+        <h1>Settings</h1>
+
+        <div class="music">
+            <p>Music</p>
+            <button class="icon" id="music" onclick="changeButton()">
+                <img src="/imagen/music.svg" alt="music button">
+            </button>
+            <button class="icon" id="no-music" hidden onclick="changeButton()">
+                <img src="/imagen/no-music.svg" alt="no music button">
+            </button>
+        </div>
+
+        <div class="sound">
+            <p>Sound Effects</p>
+            <button class="icon" id="sound" onclick="changeButton2()">
+                <img src="/imagen/speaker.svg" alt="sound button">
+            </button>
+            <button class="icon" id="mute" hidden onclick="changeButton2()">
+                <img src="/imagen/mute.svg" alt="mute button">
+            </button>
+        </div>
+
+        <div class="language">
+            <p>Language</p>
+            <button class="icon" id="spanish" hidden onclick="changeButton3()">
+                <img src="/imagen/spanish.svg" alt="spanish button">
+            </button>
+            <button class="icon" id="english" onclick="changeButton3()">
+                <img src="/imagen/english.svg" alt="english button">
+            </button>
+        </div>
+
+        <button id="changeuser" class="button">Change user name</button>
+        <div id="userForm" class="name-form" hidden>
+            <input type="text" id="userInput" placeholder="User Name">
+            <button class="icon" id="check" class="checkbutton">
+                <img src="/imagen/check.svg" alt="check button">
+            </button>
+        </div>
+
+        <button class="button" onclick="location.href='score.html'">Scores</button>
+        <button class="button">Reset the game</button>
+
+        <div class="characters">
+            <img class="circus" src="/imagen/circus.svg" alt="circus">
+            <img class="clown" src="/imagen/clown.svg" alt="clown">
+        </div>
+
+    </main>
+    <script src="../configuracion.js"></script>
+    <script src="/src/Javascript/idiomas.js"></script>
+</body>
+
+</html>

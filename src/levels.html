@@ -25,13 +25,13 @@
     </div>
     <h1>Escoge el nivel</h1>
 
-    <button class="level-button" onclick="location.href='board-game.html?level=1'">Fácil</button>
-    <button class="level-button" onclick="location.href='board-game.html?level=2'">
-      Medio
-    </button>
-    <button class="level-button" onclick="location.href='board-game.html?level=3'">
-      Difícil
-    </button>
+      <button id="easy" class="level-button" onclick="chooseLevel('easy')">Fácil</button>
+      <button id="medium" class="level-button" onclick="chooseLevel('medium')">
+        Medio
+      </button>
+      <button id="hard" class="level-button" onclick="chooseLevel('hard')">
+        Difícil
+      </button>
 
     <div class="characters">
       <img class="circus" src="/imagen/circus.svg" alt="circus" />
