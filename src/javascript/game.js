@@ -103,10 +103,10 @@ export class Game {
   endGame() {
     localStorage.setItem("newScore", this.score);
     if (this.score >= this.targetScore) {
-      window.location.href = "youwin.html";
+      window.location.href = "you-win.html";
     }
     else {
-      window.location.href = "gameover.html";
+      window.location.href = "game-over.html";
     }
   }
 
