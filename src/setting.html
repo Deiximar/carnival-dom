@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel='stylesheet'>
     <link rel="stylesheet" href="/src/assets/style.css">
-    <link rel="stylesheet" href="/src/assets/configuracion.css">
+    <link rel="stylesheet" href="/src/assets/setting.css">
 </head>
 
 <body>
@@ -24,20 +24,20 @@
 
         <div class="music">
             <p>Música</p>
-            <button class="icon" id="music" onclick="changeButton()">
+            <button class="icon" id="music" onclick="changeMusicSetting()">
                 <img src="/imagen/music.svg" alt="music button">
             </button>
-            <button class="icon" id="no-music" hidden onclick="changeButton()">
+            <button class="icon" id="no-music" hidden onclick="changeMusicSetting()">
                 <img src="/imagen/no-music.svg" alt="no music button">
             </button>
         </div>
 
         <div class="sound">
             <p>Efectos de sonido</p>
-            <button class="icon" id="sound" onclick="changeButton2()">
+            <button class="icon" id="sound" onclick="changeSoundSetting()">
                 <img src="/imagen/speaker.svg" alt="sound button">
             </button>
-            <button class="icon" id="mute" hidden onclick="changeButton2()">
+            <button class="icon" id="mute" hidden onclick="changeSoundSetting()">
                 <img src="/imagen/mute.svg" alt="mute button">
             </button>
         </div>
@@ -69,8 +69,7 @@
         </div>
 
     </main>
-    <script src="configuracion.js"></script>
-    <script src="../src/Javascript/idiomas.js"></script>
+    <script src="/src/javascript/setting.js"></script>
 </body>
 
 </html>

@@ -1,123 +1,100 @@
 @import "style.css";
 main {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
 }
 
 #return {
-    border: none;
-    background: none;   
-    top: 25px;
-    width: 100%;
-    text-align: left;
+  border: none;
+  background: none;
+  top: 25px;
+  width: 100%;
+  text-align: left;
 }
 
-#return img{
-    box-shadow: 3px 3px 5px black;
-    border-radius: 50%;
+#return img {
+  box-shadow: 3px 3px 5px black;
+  border-radius: 50%;
 }
 
 #return img:hover {
-cursor: pointer;
-box-shadow: 3px 3px 10px black;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
 }
 
 h1 {
-    color: var(--secundary); 
-    text-align: center;
-    font: bold;
-    font-size: 1em;
+  color: var(--secundary);
+  text-align: center;
+  font: bold;
+  font-size: 1em;
 }
 
 table {
-    width: 75%;
-    height: 60%;
-    margin: 10px;
-    background-color: whitesmoke;
-    color: #740059;
-    border-radius: 3%;
-    text-align:center;
-    font-size: 0.5em;
-    border-color: #740059;
-    border-collapse: collapse;
-        
+  width: 75%;
+  height: 60%;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: #740059;
+  border-radius: 3%;
+  text-align: center;
+  font-size: 0.5em;
+  border-color: #740059;
+  border-collapse: collapse;
 }
 
-th, td {
-    column-width: auto;
-    height: 10%;
-    text-align: center;
-    text-size-adjust:auto;
+th,
+td {
+  column-width: auto;
+  height: 10%;
+  text-align: center;
+  text-size-adjust: auto;
 }
 
-td{
-    font-weight: normal;
+td {
+  font-weight: normal;
 }
+.characters {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 .circus {
-    display: flex;
-    margin-top: auto;
-    margin-right: 200px;
-    
-}
-
-.clown {
-    display: flex;
-    margin-bottom: 20px;
-    margin-left: 250px;
+  margin-bottom: 170px;
+  width: 200px;
 }
 
 @media only screen and (min-width: 750px) {
-    main{
-    width: 100%;
-    grid-template-areas: 
-    "header header"
-    "title title"
-    "table table"
-    "circus clown";
-    }
-    #return-button {
-        grid-area: header;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-    }
-    
-    #return-button img {
-        grid-area: header;
-        width: 45px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 5px black;
-    }
-    
-    h1 {
-        grid-area: title;
-        font-size: 1.4em;
-    }
-    
-    table {
-    grid-area: table;
-    width: 357px;
-    height: 294px;
-    font-size: 0.5em;
-    align-content: center;
-    margin-left: 310px;
-    }
-    
-    .container {
-    grid-area: circus;
-    margin-top: auto;
-    margin-right: 250px;
+  main {
     display: flex;
-    }
-    
-    .clown {
-    grid-area: clown;
-    display: flex;
-    margin-top: 50px;
-    margin-left: 300px;
-    }
-    
-    }
+  }
+  #return img {
+    width: 70px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  table {
+    max-width: 800px;
+    font: 1.5em;
+  }
+
+  .characters {
+    width: 80%;
+  }
+  .circus {
+    margin-bottom: 30px;
+  }
+  .circus img {
+    width: 400px;
+  }
+
+  .clown img {
+    width: 140px;
+  }
+}
 
     
     
