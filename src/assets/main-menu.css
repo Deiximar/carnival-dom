@@ -1,5 +1,5 @@
 main {
-  justify-content: stretch;
+  justify-content: center;
   gap: 20px;
   align-items: center;
 }
@@ -21,6 +21,7 @@ main {
   flex-grow: 1;
   gap: 30px;
   justify-content: center;
+  align-items: center;
 }
 .button {
   width: 230px;
@@ -72,6 +73,13 @@ main {
 }
 
 @media only screen and (min-width: 750px) {
+  .characters {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
   main {
     width: 100vw;
     background-image: url(../../imagen/desktop-background.jpg);
@@ -98,6 +106,7 @@ main {
     min-width: 250px;
     max-width: 350px;
     height: 60px;
+    line-height: 60px;
   }
   .characters {
     grid-area: characters;
