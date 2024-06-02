@@ -1,3 +1,7 @@
+:root {
+  --initial-y-balloon: 450px;
+}
+
 main {
   justify-content: stretch;
   padding: 10px;
@@ -18,7 +22,7 @@ main {
   border-radius: 10px;
   box-shadow: 4px 4px 5px black;
   font-weight: bold;
-  height: fit-content;
+  height: 40px;
   width: 80px;
   text-align: center;
 }
@@ -31,74 +35,108 @@ main {
   width: 120px;
 }
 
-.play-stop-button {
+.back-button {
   background: none;
   border: none;
   text-align: center;
 }
 
-.stop-button,
-.play-button {
+.back-button img {
   margin: 0 auto;
   width: 45px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+}
+.back-button img:hover {
+  box-shadow: 3px 3px 10px black;
+  cursor: pointer;
 }
 
-.lives {
+.lives-container {
   display: flex;
   margin: 10px;
 }
 
-.level {
+.level-text {
   font-size: 1em;
   color: var(--secundary);
   text-align: center;
 }
 
-.target-text {
+.description {
   font-size: 0.6em;
   text-align-last: center;
   font-weight: bold;
 }
 
 .target-score,
-.target-time {
+.limit-time {
   color: var(--primary);
-  -webkit-text-stroke: 0.5px black;
 }
 
-.carpas img {
+.tents {
+  align-self: center;
+}
+.tents img {
   width: 385px;
   height: 155px;
 }
 
 .board-game {
   flex-grow: 1;
-  cursor: url(../../imagen/peephole.svg), auto;
+  cursor: url(../../imagen/peephole.svg) 20 20, auto;
   position: relative;
 }
 
-.ballon-container {
-  transform: translateY(525px);
+.balloon-container {
+  transform: translateY(var(--initial-y-balloon));
   width: fit-content;
+  padding: 5px;
   display: inline-block;
   position: absolute;
-  animation: balloon-ascent 5s linear;
+  /* animation: balloon-ascent 3s linear; */
   animation-iteration-count: infinite;
 }
 
-.ballon {
-  width: 35px;
-  height: 50px;
+.balloon {
   border-radius: 50%;
   position: relative;
   animation: balloon-float 4s ease-in-out infinite;
   transform-origin: bottom center;
 }
 
-.ballon::before {
+.balloon::before {
   content: "▲";
-  font-size: 0.4em;
   position: absolute;
+}
+
+.balloon-easy {
+  width: 70px;
+  height: 90px;
+}
+
+.balloon-easy::before {
+  font-size: 0.9em;
+  bottom: -25px;
+  left: 18px;
+}
+
+.balloon-medium {
+  width: 55px;
+  height: 70px;
+}
+.balloon-medium::before {
+  font-size: 0.65em;
+  bottom: -16px;
+  left: 15px;
+}
+
+.balloon-hard {
+  width: 35px;
+  height: 50px;
+}
+.balloon-hard::before {
+  font-size: 0.4em;
   bottom: -10px;
   left: 10px;
 }
@@ -115,9 +153,24 @@ main {
 
 @keyframes balloon-ascent {
   0% {
-    transform: translateY(520px);
+    transform: translateY(var(--initial-y-balloon));
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-150px);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  main {
+    display: flex;
+  }
+  .tents {
+    align-self: center;
+  }
+  .tents img {
+    align-self: center;
+    width: 1000px;
+    height: 410px;
+    max-width: 100%;
   }
 }
