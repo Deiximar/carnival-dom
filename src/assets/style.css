@@ -38,5 +38,6 @@ main {
   main {
     background-image: url(../../imagen/desktop-background.jpg);
     display: grid;
+    background-position: bottom;
   }
 }
