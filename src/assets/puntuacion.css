@@ -65,3 +65,63 @@ td{
     margin-bottom: 20px;
     margin-left: 250px;
 }
+
+@media only screen and (min-width: 750px) {
+    main{
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "title title"
+    "table table"
+    "circus clown";
+    }
+    #return-button {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    #return-button img {
+        grid-area: header;
+        width: 45px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px black;
+    }
+    
+    h1 {
+        grid-area: title;
+        font-size: 1.4em;
+    }
+    
+    table {
+    grid-area: table;
+    width: 357px;
+    height: 294px;
+    font-size: 0.5em;
+    align-content: center;
+    margin-left: 310px;
+    }
+    
+    .container {
+    grid-area: circus;
+    margin-top: auto;
+    margin-right: 250px;
+    display: flex;
+    }
+    
+    .clown {
+    grid-area: clown;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
+    }
+    
+    }
+
+    
+    
+    
+    
+      
+    
