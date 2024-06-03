@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Board Game</title>
+  <title>Pop the Balloon</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/style.css">
@@ -13,33 +13,35 @@
   <main>
     <header class="header">
       <p id="score">00</p>
-      <p id="timer">0:00</p>
-      <button class="play-stop-button">
-        <img class="stop-button" src="../../imagen/pause.svg" alt="stop-button" />
-        <img class="play-button" src="../../imagen/play-button.svg" alt="play-button" hidden />
+      <p id="timer"></p>
+      <button class="back-button" onclick="location.href='../../index.html'">
+        <img src="../../imagen/return.svg" alt="back-button" />
       </button>
     </header>
 
-    <div class="lives">
-      <img src="../../imagen/heart.svg" alt="heart" />
-      <img src="../../imagen/heart.svg" alt="heart" />
-      <img src="../../imagen/heart.svg" alt="heart" />
+    <div class="lives-container">
+      <img class="life" src="../../imagen/heart.svg" alt="heart" />
+      <img class="life" src="../../imagen/heart.svg" alt="heart" />
+      <img class="life" src="../../imagen/heart.svg" alt="heart" />
     </div>
 
     <div id="board-game" class="board-game">
-      <h1 hidden class="level">LEVEL <span class="level-number">1</span>
+      <h1 class="level-text">LEVEL <span class="level-number">1</span>
       </h1>
-      <p hidden class="target-text">Reach <span class="target-score"> 25 points</span> before
-        <span class="target-time">30 seconds</span>
+      <p class="description">Reach <span class="target-score"> 25 points</span> before
+        <span class="limit-time">60 seconds</span>
       </p>
       <img hidden src="../../imagen/peephole.svg" alt="peephole" />
     </div>
 
-    <div class="carpas">
+    <div class="tents">
       <img src="../../imagen/Carpas.svg" alt="three circus tents" />
     </div>
+    <audio>
+      <source src="../../music/background-music.mp3">
+    </audio>
   </main>
-  <script src="../javascript/board-game.js"></script>
+  <script type="module" src="../javascript/board-game.js"></script>
   <script src="../javascript/idiomas.js"></script>
   <script src="../javascript/setting.js"></script>
 </body>

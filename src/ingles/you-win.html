@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/youWin.css">
+    <link rel="stylesheet" href="../assets/you-win.css">
     <title>youWin</title>
 </head>
 
@@ -25,7 +25,7 @@
             <button class="button">Score<span id="score">00</span></button>
             <button class="button" onclick="location.href='score.html'">Save score</button>
             <button class="button" onclick="location.href='index-english.html'">Main menu</button>
-            <button class="button" onclick="location.href='board-game-english.html'">Play again</button>
+            <button class="back-play-button  button">Play again</button>
         </div>
         <div class="characters">
             <div class="circus">
@@ -38,6 +38,11 @@
     </main>
     <script src="../javascript/idiomas.js"></script>
     <script src="../javascript/setting.js"></script>
+    <script>
+        document.getElementById('score').innerHTML = localStorage.getItem("newScore");
+        level = localStorage.getItem('level');
+        document.querySelector('.back-play-button').addEventListener('click', () => location.href = `board-game-english.html?level=${level}`);
+    </script>
 </body>
 
 </html>
