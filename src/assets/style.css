@@ -1,5 +1,5 @@
 :root {
-  --main-background: url(../../imagen/background.jpg);
+  --main-background: url(../../../imagen/background.jpg);
   --primary: #ffb52b;
   --secundary: #740059;
   --font-family: "kanit", sans-serif;
@@ -36,7 +36,7 @@ main {
 
 @media only screen and (min-width: 750px) {
   main {
-    background-image: url(../../imagen/desktop-background.jpg);
+    background-image: url(../../../imagen/desktop-background.jpg);
     display: grid;
     background-position: bottom;
   }
