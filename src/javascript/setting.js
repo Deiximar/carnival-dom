@@ -42,7 +42,7 @@ function changeSoundSetting() {
     showSoundSetting();
 }
 
-function changeButton3() {
+function changeLanguage() {
     const spanishbutton = document.getElementById('spanish');
     const englishbutton = document.getElementById('english');
 
