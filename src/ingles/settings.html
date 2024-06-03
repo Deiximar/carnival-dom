@@ -21,47 +21,55 @@
 
 
         <h1>Settings</h1>
+        <div class="setting-controlls">
+            <div class="controlls">
 
-        <div class="music">
-            <p>Music</p>
-            <button class="icon" id="music" onclick="changeMusicSetting()">
-                <img src="../../imagen/music.svg" alt="music button">
-            </button>
-            <button class="icon" id="no-music" hidden onclick="changeMusicSetting()">
-                <img src="../../imagen/no-music.svg" alt="no music button">
-            </button>
+                <div class="music">
+                    <p>Music</p>
+                    <button class="icon" id="music" onclick="changeMusicSetting()">
+                        <img src="../../imagen/music.svg" alt="music button">
+                    </button>
+                    <button class="icon" id="no-music" hidden onclick="changeMusicSetting()">
+                        <img src="../../imagen/no-music.svg" alt="no music button">
+                    </button>
+                </div>
+
+                <div class="sound">
+                    <p>Sound Effects</p>
+                    <button class="icon" id="sound" onclick="changeSoundSetting()">
+                        <img src="../../imagen/speaker.svg" alt="sound button">
+                    </button>
+                    <button class="icon" id="mute" hidden onclick="changeSoundSetting()">
+                        <img src="../../imagen/mute.svg" alt="mute button">
+                    </button>
+                </div>
+
+                <div class="language">
+                    <p>Language</p>
+                    <button class="icon" id="spanish" hidden onclick="changeButton3()">
+                        <img src="../../imagen/spanish.svg" alt="spanish button">
+                    </button>
+                    <button class="icon" id="english" onclick="changeButton3()">
+                        <img src="../../imagen/english.svg" alt="english button">
+                    </button>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="changeuser" class="button">Change user name</button>
+                <div id="userForm" class="name-form" hidden>
+                    <input type="text" id="userInput" placeholder="User Name">
+                    <button class="icon" id="check" class="checkbutton">
+                        <img src="../../imagen/check.svg" alt="check button">
+                    </button>
+                </div>
+
+                <button class="button" onclick="location.href='score.html'">Scores</button>
+                <button class="button">Reset the game</button>
+            </div>
+
         </div>
 
-        <div class="sound">
-            <p>Sound Effects</p>
-            <button class="icon" id="sound" onclick="changeSoundSetting()">
-                <img src="../../imagen/speaker.svg" alt="sound button">
-            </button>
-            <button class="icon" id="mute" hidden onclick="changeSoundSetting()">
-                <img src="../../imagen/mute.svg" alt="mute button">
-            </button>
-        </div>
-
-        <div class="language">
-            <p>Language</p>
-            <button class="icon" id="spanish" hidden onclick="changeButton3()">
-                <img src="../../imagen/spanish.svg" alt="spanish button">
-            </button>
-            <button class="icon" id="english" onclick="changeButton3()">
-                <img src="../../imagen/english.svg" alt="english button">
-            </button>
-        </div>
-
-        <button id="changeuser" class="button">Change user name</button>
-        <div id="userForm" class="name-form" hidden>
-            <input type="text" id="userInput" placeholder="User Name">
-            <button class="icon" id="check" class="checkbutton">
-                <img src="../../imagen/check.svg" alt="check button">
-            </button>
-        </div>
-
-        <button class="button" onclick="location.href='score.html'">Scores</button>
-        <button class="button">Reset the game</button>
 
         <div class="characters">
             <img class="circus" src="../../imagen/circus.svg" alt="circus">

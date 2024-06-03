@@ -22,46 +22,55 @@
 
         <h1>Configuración</h1>
 
-        <div class="music">
-            <p>Música</p>
-            <button class="icon" id="music" onclick="changeMusicSetting()">
-                <img src="../imagen/music.svg" alt="music button">
-            </button>
-            <button class="icon" id="no-music" hidden onclick="changeMusicSetting()">
-                <img src="../imagen/no-music.svg" alt="no music button">
-            </button>
-        </div>
+        <div class="setting-controlls">
 
-        <div class="sound">
-            <p>Efectos de sonido</p>
-            <button class="icon" id="sound" onclick="changeSoundSetting()">
-                <img src="../imagen/speaker.svg" alt="sound button">
-            </button>
-            <button class="icon" id="mute" hidden onclick="changeSoundSetting()">
-                <img src="../imagen/mute.svg" alt="mute button">
-            </button>
-        </div>
+            <div class="controlls">
+                <div class="music">
+                    <p>Música</p>
+                    <button class="icon" id="music" onclick="changeMusicSetting()">
+                        <img src="../imagen/music.svg" alt="music button">
+                    </button>
+                    <button class="icon" id="no-music" hidden onclick="changeMusicSetting()">
+                        <img src="../imagen/no-music.svg" alt="no music button">
+                    </button>
+                </div>
 
-        <div class="language">
-            <p>Idiomas</p>
-            <button class="icon" id="spanish" onclick="changeButton3()">
-                <img src="../imagen/spanish.svg" alt="spanish button">
-            </button>
-            <button class="icon" id="english" hidden onclick="changeButton3()">
-                <img src="../imagen/english.svg" alt="english button">
-            </button>
-        </div>
+                <div class="sound">
+                    <p>Efectos de sonido</p>
+                    <button class="icon" id="sound" onclick="changeSoundSetting()">
+                        <img src="../imagen/speaker.svg" alt="sound button">
+                    </button>
+                    <button class="icon" id="mute" hidden onclick="changeSoundSetting()">
+                        <img src="../imagen/mute.svg" alt="mute button">
+                    </button>
+                </div>
 
-        <button id="changeuser" class="button">Cambiar nombre de usuario</button>
-        <div id="userForm" class="name-form" hidden>
-            <input type="text" id="userInput" placeholder="Nombre de usuario">
-            <button class="icon" id="check" class="checkbutton">
-                <img src="../imagen/check.svg" alt="check button">
-            </button>
-        </div>
+                <div class="language">
+                    <p>Idiomas</p>
+                    <button class="icon" id="spanish" onclick="changeButton3()">
+                        <img src="../imagen/spanish.svg" alt="spanish button">
+                    </button>
+                    <button class="icon" id="english" hidden onclick="changeButton3()">
+                        <img src="../imagen/english.svg" alt="english button">
+                    </button>
+                </div>
+            </div>
 
-        <button class="button" onclick="location.href='scores.html'">Ver puntuaciones</button>
-        <button class="button">Restablecer el juego</button>
+
+
+            <div class="buttons">
+                <button id="changeuser" class="button">Cambiar nombre de usuario</button>
+                <div id="userForm" class="name-form" hidden>
+                    <input type="text" id="userInput" placeholder="Nombre de usuario">
+                    <button class="icon" id="check" class="checkbutton">
+                        <img src="../imagen/check.svg" alt="check button">
+                    </button>
+                </div>
+
+                <button class="button" onclick="location.href='scores.html'">Ver puntuaciones</button>
+                <button class="button">Restablecer el juego</button>
+            </div>
+        </div>
 
         <div class="characters">
             <img class="circus" src="../imagen/circus.svg" alt="circus">
