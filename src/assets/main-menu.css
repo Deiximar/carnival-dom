@@ -82,7 +82,7 @@ main {
 @media only screen and (min-width: 970px) {
   main {
     width: 100vw;
-    background-image: url(../../../imagen/desktop-background.jpg);
+    background-image: url(../../imagen/desktop-background.jpg);
     display: grid;
     background-position: bottom;
     grid-template-areas:

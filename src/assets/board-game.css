@@ -84,7 +84,7 @@ main {
 
 .board-game {
   flex-grow: 1;
-  cursor: url(../../../imagen/peephole.svg) 20 20, auto;
+  cursor: url(../../imagen/peephole.svg) 20 20, auto;
   position: relative;
 }
 
