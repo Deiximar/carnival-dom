@@ -59,7 +59,8 @@ h1 {
 .characters {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
+  margin-top: 40px;
 }
 
 .circus {
@@ -76,18 +77,8 @@ h1 {
     display: flex;
   }
 
-  #return {
-    margin-top: 35px;
-    margin-left: 35px;
-  }
-
   #return img {
     width: 70px;
-  }
-
-  #settings {
-    margin-top: 35px;
-    margin-right: 35px;
   }
 
   #settings img {
@@ -107,11 +98,9 @@ h1 {
   .circus {
     width: 525px;
     height: 265px;
-    margin-top: 80px;
   }
 
   .clown {
-    margin-top: 100px;
-    margin-right: 100px;
+    margin-top: 0px;
   }
 }
